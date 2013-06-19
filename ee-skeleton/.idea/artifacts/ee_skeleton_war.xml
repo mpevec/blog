@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="ee-skeleton:war">
     <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="ee-skeleton-1.0.war">
+    <root id="archive" name="ee-skeleton.war">
       <element id="artifact" artifact-name="ee-skeleton:war exploded" />
     </root>
   </artifact>
