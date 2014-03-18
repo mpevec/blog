@@ -1,0 +1,24 @@
+<form class="form-horizontal" name="f1" ng-submit="submit()">
+
+    <div class="form-group" ng-class="{'has-error': f1.inputBankAccount.$dirty && f1.inputBankAccount.$invalid,
+                                       'has-success': f1.inputBankAccount.$dirty && f1.inputBankAccount.$valid}">
+
+        <label class="col-sm-2 control-label" for="inputBankAccount">Bank account: *</label>
+
+        <div class="col-sm-10">
+            <input class="form-control" type="text" id="inputBankAccount" name="inputBankAccount" ng-required="true"  ng-minlength="15" ng-maxlength="15" ng-pattern="/^[0-9]+$/" ng-model="dish.bankAccount" bank-account>
+
+            <span class="help-block" ng-show="f1.inputBankAccount.$dirty && f1.inputBankAccount.$error.required" >Required.</span>
+            <span class="help-block" ng-show="f1.inputBankAccount.$dirty && f1.inputBankAccount.$error.minlength">Minimal length is 15.</span>
+            <span class="help-block" ng-show="f1.inputBankAccount.$dirty && f1.inputBankAccount.$error.maxlength">Maximum length is 15.</span>
+            <span class="help-block" ng-show="f1.inputBankAccount.$dirty && f1.inputBankAccount.$error.pattern">Only numbers allowed.</span>
+            <span class="help-block" ng-show="f1.inputBankAccount.$dirty && f1.inputBankAccount.$error.bankAccount">Invalid bank account.</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" ng-disabled="f1.$invalid" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+
+</form>

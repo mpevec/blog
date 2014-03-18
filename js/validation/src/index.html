@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <title>Validation Examples</title>
+
+    <!-- Bootstrap -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../bower_components/jquery/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Angular JS  -->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-route/angular-route.min.js"></script>
+
+
+    <!-- MAIN APP -->
+    <script type="text/javascript" src="app/app.js"></script>
+
+    <!-- Dish1 -->
+    <script type="text/javascript" src="app/dish1/dish1-controller.js"></script>
+    <script type="text/javascript" src="app/dish1/dish1.js"></script>
+
+    <!-- Dish2 -->
+    <script type="text/javascript" src="app/dish2/bank-account-service.js"></script>
+    <script type="text/javascript" src="app/dish2/bank-account-directive.js"></script>
+    <script type="text/javascript" src="app/dish2/dish2-controller.js"></script>
+    <script type="text/javascript" src="app/dish2/dish2.js"></script>
+
+    <!-- Dish3 -->
+    <script type="text/javascript" src="app/dish3/username-service.js"></script>
+    <script type="text/javascript" src="app/dish3/username-directive.js"></script>
+    <script type="text/javascript" src="app/dish3/dish3-controller.js"></script>
+    <script type="text/javascript" src="app/dish3/dish3.js"></script>
+
+    <!-- Dish4 -->
+    <script type="text/javascript" src="app/dish4/password-directive.js"></script>
+    <script type="text/javascript" src="app/dish4/dish4-controller.js"></script>
+    <script type="text/javascript" src="app/dish4/dish4.js"></script>
+
+
+
+</head>
+<body ng-controller="AppController">
+    <div ng-view class="container"></div>
+</body>
+</html>
